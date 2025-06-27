@@ -1,0 +1,13 @@
+.slick-prev {
+    display: none !important;
+    left: -25px;
+}
+
+.slick-next {
+    display: none !important;
+    left: -25px;
+}
+/* ::-webkit-scrollbar{
+    width: 1px;
+} */
+

@@ -1,0 +1,31 @@
+@import "tailwindcss";
+/* :root {
+    --primary: #1E3A8A;
+    --secondary: #9333EA;
+  } */
+/* 
+  ::-webkit-scrollbar{
+    width: 10px;
+    
+  } */
+  ::-webkit-scrollbar{
+    width: 5px; 
+    
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #1A2B49;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+html,body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
