@@ -747,7 +747,7 @@ const Celebration = ({ setActivePage }) => {
               Community Celebrations
             </h1>
             <div className="flex flex-col sm:flex-row items-center gap-4 w-full lg:w-auto">
-              <div className="relative w-full sm:w-64">
+              {/* <div className="relative w-full sm:w-64">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
                 <input
                   type="text"
@@ -756,7 +756,7 @@ const Celebration = ({ setActivePage }) => {
                   onChange={(e) => setSearchTerm(e.target.value)}
                   className="pl-10 pr-4 text-sm py-2 rounded-lg bg-white text-black focus:ring-2 focus:ring-[#1A2B49] focus:outline-none"
                 />
-              </div>
+              </div> */}
               <button
                 onClick={() => setShowForm(true)}
                 className="flex items-center gap-2 text-sm bg-[#1A2B49] border border-white px-4 py-2 rounded-lg font-medium hover:bg-[#2A3B59] transition-all duration-300"
@@ -791,7 +791,7 @@ const Celebration = ({ setActivePage }) => {
                               onClick={(e) => handleEditClick(e, celebration)}
                               className="text-blue-500 hover:text-blue-600"
                             >
-                              <Edit className="w-5 h-5" />
+                              {/* <Edit className="w-5 h-5" /> */}
                             </button>
                             <button
                               onClick={() => handleCardClick(celebration)}
@@ -941,7 +941,7 @@ const Celebration = ({ setActivePage }) => {
                       : "bg-white text-gray-700 hover:bg-green-100"
                   }`}
                 >
-                  Accepted Celebration
+                  Accepted 
                 </button>
                 <button
                   onClick={() => setStatusFilter("rejected")}
@@ -951,7 +951,7 @@ const Celebration = ({ setActivePage }) => {
                       : "bg-white text-gray-700 hover:bg-red-100"
                   }`}
                 >
-                  Rejected Celebration
+                  Rejected
                 </button>
                 <div className="relative w-full sm:w-64">
                   <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
@@ -1032,7 +1032,7 @@ const Celebration = ({ setActivePage }) => {
                         onClick={(e) => handleEditClick(e, celebration)}
                         className="text-blue-500 hover:text-blue-600"
                       >
-                        <Edit className="w-5 h-5" />
+                        {/* <Edit className="w-5 h-5" /> */}
                       </button>
                       <button
                         onClick={() => handleDelete(celebration.N_Id)}

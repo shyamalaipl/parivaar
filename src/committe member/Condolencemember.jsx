@@ -648,7 +648,7 @@ const Condolencemember = ({ setActivePage, activePage }) => {
           </h1>
 
           <div className="flex flex-col sm:flex-row items-center gap-3 w-full lg:w-auto">
-            <div className="relative w-full sm:w-64">
+            {/* <div className="relative w-full sm:w-64">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-4 text-gray-400" />
               <input
                 type="text"
@@ -657,7 +657,7 @@ const Condolencemember = ({ setActivePage, activePage }) => {
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="pl-10 pr-4 text-sm py-2 w-full rounded-lg bg-white text-black focus:ring-2 focus:ring-[#1A2B49] focus:outline-none"
               />
-            </div>
+            </div> */}
 
             <button
               onClick={() => setShowForm(true)}
@@ -840,7 +840,7 @@ const Condolencemember = ({ setActivePage, activePage }) => {
                     : "bg-white text-gray-700 hover:bg-gray-100"
                 }`}
               >
-                Accepted Celebration
+                Accepted
               </button>
               <button
                 onClick={() => setStatusFilter("rejected")}
@@ -850,8 +850,20 @@ const Condolencemember = ({ setActivePage, activePage }) => {
                     : "bg-white text-gray-700 hover:bg-gray-100"
                 }`}
               >
-                Rejected Celebration
+                Rejected
               </button>
+
+
+                 <div className="relative w-full sm:w-64">
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-4 text-gray-400" />
+              <input
+                type="text"
+                placeholder="Search by name, date..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="pl-10 pr-4 text-sm py-2 w-full rounded-lg bg-white text-black focus:ring-2 focus:ring-[#1A2B49] focus:outline-none"
+              />
+            </div>
             </div>
 
             <div className="flex items-center gap-2">
@@ -922,7 +934,7 @@ const Condolencemember = ({ setActivePage, activePage }) => {
                       onClick={() => handleEditClick(condolence)}
                       className="text-blue-500 hover:text-blue-600"
                     >
-                      <Edit className="w-5 h-5" />
+                      {/* <Edit className="w-5 h-5" /> */}
                     </button>
                     <button
                       onClick={() => handleDelete(condolence.N_Id)}
